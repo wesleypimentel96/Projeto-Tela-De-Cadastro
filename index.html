@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <title>Projeto Tela de Cadastro</title>
+</head>
+
+<body>
+
+
+    <div class="screen">
+        <div class="leftside"></div><!--leftside-->
+        <div class="rightside">
+            <h1>Crie sua conta</h1>
+
+            <form method="POST" action="cadastro.php" class="form-validator">
+
+                <label>
+                    Nome Completo:<br />
+                    <input type="text" name="name" data-rules="required|min=10" />
+                </label>
+
+
+                <label>
+                    E-mail:<br />
+                    <input type="email" name="email" data-rules="required|email" />
+                </label>
+
+
+                <label>
+                    Senha:<br />
+                    <input type="password" name="password" data-rules="required|min=6" />
+                </label>
+
+
+                <label>
+                    <input type="submit" value="Cadastrar" />
+                </label>
+
+                <div>Já tem uma conta? <a href="">Faça seu Login</a></div>
+
+            </form>
+        </div><!--rightside-->
+    </div><!--screen-->
+
+
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
